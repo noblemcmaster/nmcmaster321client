@@ -1,0 +1,94 @@
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar li {
+    display: inline;
+    padding: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+a.red {
+    color: red;
+}
+
+.banner {
+    background-color: #660000;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#small-bigal {
+    height: 100px;
+}
+
+#social {
+    color: #660000;
+    font-size: 100px;
+}
+
+.social-section {
+    padding: 20px 50px;
+}
+
+.bold{
+    font-weight: 900;
+}
+
+#greets ul {
+    list-style-type: none;
+}
+
+.avatar {
+    background-image: url('../images/bigal2.JPG');
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

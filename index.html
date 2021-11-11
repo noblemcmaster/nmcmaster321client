@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Al Goes Social</title>
+    <link rel="stylesheet" href="./Resources/css/index.css">
+</head>
+<body onload = "getPosts()">
+
+    <!-- Read in our Javascript -->
+    <script type = "text/javascript" src = "Resources/scripts/index.js"></script>
+
+    <!-- Read in your Modal -->
+    <script type = "text/javascript" src = "Resources/scripts/modal.js"></script>
+
+    <!--Navbar Section-->
+    <nav class="navbar">
+        <ul>
+            <li><a class="red" href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!--Banner Section-->
+    <div class="banner">
+        <h1>Big Al's Landing Page</h1>
+        <img id = "small-bigal" src="./Resources/images/bigal1.png" alt="">
+        <p>Because everything is better with Big Al</p>
+    </div>
+
+    <!--Social Media Section-->
+    <div class="social-section">
+        <span id="social" class="bold">Big Al Goes Social</span>
+        <p class="bold">Big Al's 321 Social Media</p>
+    </div>
+    
+    <form onsubmit="return false;" method="post">
+        <input type="text" name="text" id="text"/>
+        <input type="submit" value="submit" onclick="addPost()">
+    </form>
+
+    <div id="posts">
+
+    </div>
+
+    <div id="greets">
+        
+    </div>
+
+    <div id="editmodal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <form onsubmit="return false;" method="post">
+                <label for="updatepost">Edit post:</label>
+                <input type="text" name="updatepost" id="updatepost">
+                <input type="submit" value="submit" id="updatesubmit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
